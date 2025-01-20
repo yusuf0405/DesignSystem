@@ -1,0 +1,72 @@
+package org.joseph.designsystem.dimens
+
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+class DesignSystemDimens(
+    val dp0: Dp = 0.dp,
+    val dp1: Dp = 1.dp,
+    val dp2: Dp = 2.dp,
+    val dp4: Dp = 4.dp,
+    val dp6: Dp = 6.dp,
+    val dp8: Dp = 8.dp,
+    val dp9: Dp = 9.dp,
+    val dp10: Dp = 10.dp,
+    val dp11: Dp = 11.dp,
+    val dp12: Dp = 12.dp,
+    val dp14: Dp = 14.dp,
+    val dp15: Dp = 15.dp,
+    val dp16: Dp = 16.dp,
+    val dp18: Dp = 18.dp,
+    val dp20: Dp = 20.dp,
+    val dp22: Dp = 22.dp,
+    val dp24: Dp = 24.dp,
+    val dp25: Dp = 25.dp,
+    val dp26: Dp = 26.dp,
+    val dp28: Dp = 28.dp,
+    val dp30: Dp = 30.dp,
+    val dp32: Dp = 32.dp,
+    val dp34: Dp = 34.dp,
+    val dp36: Dp = 36.dp,
+    val dp38: Dp = 38.dp,
+    val dp40: Dp = 40.dp,
+    val dp44: Dp = 44.dp,
+    val dp48: Dp = 48.dp,
+    val dp50: Dp = 50.dp,
+    val dp56: Dp = 56.dp,
+    val dp68: Dp = 68.dp,
+    val dp80: Dp = 80.dp,
+    val dp100: Dp = 100.dp,
+    val dp120: Dp = 120.dp,
+    val dp130: Dp = 130.dp,
+    val dp136: Dp = 136.dp,
+    val dp150: Dp = 150.dp,
+    val dp160: Dp = 160.dp,
+    val dp174: Dp = 174.dp,
+    val dp200: Dp = 200.dp,
+    val dp800: Dp = 800.dp,
+
+    val sp10: TextUnit = 10.sp,
+    val sp11: TextUnit = 11.sp,
+    val sp12: TextUnit = 12.sp,
+    val sp14: TextUnit = 14.sp,
+    val sp16: TextUnit = 16.sp,
+    val sp17: TextUnit = 17.sp,
+    val sp20: TextUnit = 20.sp,
+    val sp24: TextUnit = 24.sp,
+    val sp28: TextUnit = 28.sp,
+    val sp32: TextUnit = 32.sp,
+    val sp36: TextUnit = 36.sp,
+    val sp38: TextUnit = 38.sp,
+    val sp40: TextUnit = 40.sp,
+    val sp48: TextUnit = 48.sp,
+
+    val onboardingUserItemHeight: Dp = 140.dp,
+    val onboardingUserItemWidth: Dp = 130.dp,
+
+    val storiesItemWidth: Dp = 100.dp,
+    val storiesItemHeight: Dp = 140.dp,
+
+)
