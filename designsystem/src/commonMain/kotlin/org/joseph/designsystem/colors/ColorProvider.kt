@@ -4,12 +4,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
 
-val LocalDesignSystemColors = staticCompositionLocalOf<DesignSystemColors> {
+internal val LocalDesignSystemColors = staticCompositionLocalOf<DesignSystemColors> {
     error("No palette provided")
 }
 
 @Composable
-fun ProvideColors(
+internal fun ProvideColors(
     colors: DesignSystemColors,
     content: @Composable () -> Unit,
 ) {

@@ -6,7 +6,7 @@ import org.joseph.designsystem.dimens.MediumSpacing
 import org.joseph.designsystem.dimens.LargeSpacing
 import org.joseph.designsystem.dimens.SmallSpacing
 
-val Shapes = Shapes(
+internal val Shapes = Shapes(
     small = RoundedCornerShape(SmallSpacing),
     medium = RoundedCornerShape(MediumSpacing),
     large = RoundedCornerShape(LargeSpacing)

@@ -207,7 +207,7 @@ class DesignSystemColors(
     }
 }
 
-fun debugColors(
+internal fun debugColors(
     darkTheme: Boolean,
     darkPalette: DesignSystemColors,
     lightPalette: DesignSystemColors,

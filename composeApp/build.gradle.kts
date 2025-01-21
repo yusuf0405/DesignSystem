@@ -10,7 +10,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(libs.versions.jvm.get().toInt())
     androidTarget {
         //https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html
         instrumentedTestVariant.sourceSetTree.set(KotlinSourceSetTree.test)
@@ -41,7 +41,11 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            implementation(project(":designsystem"))
+            // Use internal library
+//            implementation(project(":designsystem"))
+            // Use remote library
+            implementation(libs.desingnsystem)
+
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
@@ -67,21 +71,20 @@ kotlin {
         jsMain.dependencies {
             implementation(compose.html.core)
         }
-
     }
 }
 
 android {
     namespace = "org.joseph.designsystem"
-    compileSdk = 35
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = 35
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
 
         applicationId = "org.joseph.designsystem.androidApp"
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = libs.versions.versionCode.get().toInt()
+        versionName = libs.versions.version.get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -100,7 +103,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "DesignSystem"
-            packageVersion = "1.0.0"
+            packageVersion = libs.versions.version.get()
 
             linux {
                 iconFile.set(project.file("desktopAppIcons/LinuxIcon.png"))
