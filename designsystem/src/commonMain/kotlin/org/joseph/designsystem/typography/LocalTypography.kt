@@ -5,16 +5,16 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.staticCompositionLocalOf
 
-val LocalDesignSystemTypography = staticCompositionLocalOf<DesignSystemTypography> {
+internal val LocalDesignSystemTypography = staticCompositionLocalOf<DesignSystemTypography> {
     error("No typography provided")
 }
 
 @Composable
-fun ProvideTypography(
-    DesignSystemTypography: DesignSystemTypography,
+internal fun ProvideTypography(
+    typography: DesignSystemTypography,
     content: @Composable () -> Unit,
 ) {
-    val styles = remember { DesignSystemTypography }
+    val styles = remember { typography }
     CompositionLocalProvider(
         values = arrayOf(LocalDesignSystemTypography provides styles),
         content = content

@@ -1,23 +1,7 @@
 package org.joseph.designsystem.colors
 
 
-val lightPalette = DesignSystemColors(
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
-    /** Text **/
+internal val lightPalette = DesignSystemColors(
     textHeadline = TextHeadline,
     textPrimary = TextPrimary,
     onTextPrimary = TextPrimaryDark,
@@ -30,37 +14,6 @@ val lightPalette = DesignSystemColors(
     textPrimaryLinkInverted = TextPrimaryLinkInverted,
     textSecondaryLink = TextSecondaryLink,
 
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
     backgroundPrimary = BackgroundPrimary,
     onBackgroundPrimary = BackgroundPrimaryDark,
     backgroundPrimaryElevated = BackgroundPrimaryElevated,
@@ -73,72 +26,10 @@ val lightPalette = DesignSystemColors(
     backgroundHover = BackgroundHover,
     backgroundNavbarIos = BackgroundNavbarIos,
 
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
     iconsPrimary = IconsPrimary,
     iconsSecondary = IconsSecondary,
     iconsTertiary = IconsTertiary,
 
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
     controlsPrimaryActive = ControlPrimaryActive,
     controlsSecondaryActive = ControlSecondaryActive,
     controlsTertiaryActive = ControlTertiaryActive,
@@ -147,37 +38,6 @@ val lightPalette = DesignSystemColors(
     controlsActiveTabBar = ControlActiveTabbar,
     controlsInactiveTabBar = ControlInactiveTabbar,
 
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
     accentActive = AccentActive,
     accentPositive = AccentPositive,
     accentWarning = AccentWarning,
@@ -193,8 +53,6 @@ val lightPalette = DesignSystemColors(
     isDark = false
 )
 
-// Не ограничивать видимость,
-// т.к. предоставляем возможность расширения палитры
 val darkPalette = DesignSystemColors(
     textHeadline = TextHeadlineDark,
     textPrimary = TextPrimaryDark,
@@ -208,37 +66,6 @@ val darkPalette = DesignSystemColors(
     textPrimaryLinkInverted = TextPrimaryLinkInvertedDark,
     textSecondaryLink = TextSecondaryLinkDark,
 
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
-
-    /** Background **/
     backgroundPrimary = BackgroundPrimaryDark,
     onBackgroundPrimary = BackgroundPrimary,
     backgroundPrimaryElevated = BackgroundPrimaryElevatedDark,
@@ -251,72 +78,10 @@ val darkPalette = DesignSystemColors(
     backgroundHover = BackgroundHoverDark,
     backgroundNavbarIos = BackgroundNavbarIosDark,
 
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
-
-    /** Icons **/
     iconsPrimary = IconsPrimaryDark,
     iconsSecondary = IconsSecondaryDark,
     iconsTertiary = IconsTertiaryDark,
 
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
-
-    /** Controls **/
     controlsPrimaryActive = ControlPrimaryActiveDark,
     controlsSecondaryActive = ControlSecondaryActiveDark,
     controlsTertiaryActive = ControlTertiaryActiveDark,
@@ -325,37 +90,6 @@ val darkPalette = DesignSystemColors(
     controlsActiveTabBar = ControlActiveTabbarDark,
     controlsInactiveTabBar = ControlInactiveTabbarDark,
 
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
-
-    /** Accent **/
     accentActive = AccentActiveDark,
     accentPositive = AccentPositiveDark,
     accentWarning = AccentWarningDark,
