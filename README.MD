@@ -1,34 +1,46 @@
-# Compose Multiplatform Application
+# 📐 Design System KMP  
 
-## Before running!
- - check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
- - install JDK 17 or higher on your machine
- - add `local.properties` file to the project root and set a path to Android SDK there
+**Design System KMP** is a Kotlin Multiplatform (KMP) library for unified UI styling across Android and iOS applications. It provides typography, colors, spacing, and other design system components.  
 
-### Android
-To run the application on android device/emulator:  
- - open project in Android Studio and run imported android run configuration
+## 🔧 Features  
 
-To build the application bundle:
- - run `./gradlew :composeApp:assembleDebug`
- - find `.apk` file in `composeApp/build/outputs/apk/debug/composeApp-debug.apk`
-Run android UI tests on the connected device: `./gradlew :composeApp:connectedDebugAndroidTest`
+- 🎨 **Flexible color palette** (light and dark themes)  
+- ✍ **Typography based on Compose Multiplatform**  
+- 📏 **Dimension system (spacing, element sizes)**  
+- 🌍 **KMP support for Android and iOS**  
+- 📦 **Easy integration**  
 
-### Desktop
-Run the desktop application: `./gradlew :composeApp:run`
-Run desktop UI tests: `./gradlew :composeApp:jvmTest`
+## 📦 Installation  
 
-### iOS
-To run the application on iPhone device/simulator:
- - Open `iosApp/iosApp.xcproject` in Xcode and run standard configuration
- - Or use [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile) for Android Studio
-Run iOS simulator UI tests: `./gradlew :composeApp:iosSimulatorArm64Test`
+Add the library to your project dependencies:  
 
-### JS Browser (Experimental)
-Run the browser application: `./gradlew :composeApp:jsBrowserDevelopmentRun --continue`
-Run browser UI tests: `./gradlew :composeApp:jsBrowserTest`
+### Gradle (Kotlin DSL)  
+```kotlin
+dependencies {
+    implementation("io.github.yusuf0405:designsystem:<latest-version>")
+}
+```  
 
-### Wasm Browser (Alpha)
-Run the browser application: `./gradlew :composeApp:wasmJsBrowserDevelopmentRun --continue`
-Run browser UI tests: `./gradlew :composeApp:wasmJsBrowserTest`
+## 🚀 Usage  
 
+### 🔹 Typography  
+```kotlin
+val typography = DesignSystemTheme.typography
+Text("Hello, world!", style = typography.titleLarge.bold)
+```  
+
+### 🔹 Color Palette  
+```kotlin
+val colors = DesignSystemTheme.colors
+Box(modifier = Modifier.background(colors.primary))
+```  
+
+### 🔹 Dynamic Theme Switching  
+```kotlin
+DesignSystemTheme(isDarkTheme = true) {
+    // Your content
+}
+```  
+
+## 📜 License  
+This project is licensed under the MIT License.
