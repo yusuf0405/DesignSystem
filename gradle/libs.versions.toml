@@ -1,16 +1,26 @@
 [versions]
+minSdk = "21"
+compileSdk = "35"
+targetSdk = "35"
+jvm = "11"
+
+groupId = "io.github.yusuf0405"
+versionCode = "1"
+version = "1.0.1"
 
 kotlin = "2.1.0"
 compose = "1.7.3"
 agp = "8.6.1"
 androidx-activityCompose = "1.9.3"
 androidx-uiTest = "1.7.4"
+desingnsystem = "1.0.1"
 
 [libraries]
 
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-uitest-testManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-uiTest" }
 androidx-uitest-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-uiTest" }
+desingnsystem = { module = "io.github.yusuf0405:designsystem", version.ref = "desingnsystem" }
 
 [plugins]
 
