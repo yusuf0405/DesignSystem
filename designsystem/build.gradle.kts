@@ -10,17 +10,16 @@ plugins {
     id("com.vanniktech.maven.publish") version "0.30.0"
 }
 
-group = "org.joseph.designsystem"
-version = "1.0.0"
+group = libs.versions.groupId.get()
+version = libs.versions.version.get()
 
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(libs.versions.jvm.get().toInt())
     jvm()
     androidTarget {
         publishLibraryVariants("release")
         withSourcesJar(publish = true)
     }
-
 
     js {
         browser()
@@ -65,16 +64,15 @@ kotlin {
         jsMain.dependencies {
             implementation(compose.html.core)
         }
-
     }
 }
 
 android {
     namespace = "org.joseph.designsystem"
-    compileSdk = 35
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        minSdk = 21
+        minSdk = libs.versions.minSdk.get().toInt()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -92,15 +90,14 @@ dependencies {
 }
 
 mavenPublishing {
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = false)
     signAllPublications()
 }
 
-
 publishing.publications.withType<MavenPublication>()
     .configureEach {
-        groupId = "org.joseph.designsystem"
-        version = "1.0.0"
+        groupId = libs.versions.groupId.get()
+        version = libs.versions.version.get()
 
         pom {
             name.set("Designsystem")
@@ -138,15 +135,9 @@ publishing.publications.withType<MavenPublication>()
 publishing {
     repositories {
         mavenLocal()
-
         maven {
             name = "BuildDir"
             url = uri(rootProject.layout.buildDirectory.dir("maven-repo"))
         }
-
-        maven {
-
-        }
     }
 }
-
